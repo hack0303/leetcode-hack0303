@@ -4,7 +4,7 @@ public class Case007 {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int x = 123;
+        int x = -123;
         System.out.println(solution.reverse(x));
     }
 
@@ -16,7 +16,7 @@ public class Case007 {
                 return 0;
             }
             long store = 0;
-            while (x > 0) {
+            while (x != 0) {
                 store = store * 10 + x % 10;
                 x /= 10;
             }
